@@ -17,7 +17,7 @@ export abstract class View<T> {
         }
     }
 
-    @logarTempoDeExecucao()
+    @logarTempoDeExecucao(true)
     public update(model: T): void {
 
         const t1 = performance.now();
